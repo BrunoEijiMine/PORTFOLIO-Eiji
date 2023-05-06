@@ -1,10 +1,9 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-@import url("https://use.typekit.net/lzb8eyn.css");
-
+@import url(/css/style.css);
 /*=============== VARIABLES CSS ===============*/
 :root {
-  /* Aki é o tamanho do header q eu defini automático */
+  /* Aqui é o tamanho do header q eu defini automático */
   --header-height: 3rem;
   --hue-color: 235;
 
@@ -12,30 +11,6 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
-/*========== Botão do Dark/Light mode ==========*/
-.nav__dark {
-  display: flex;
-  align-items: center;
-  column-gap: 2rem;
-  position: absolute;
-  left: 3rem;
-  bottom: 4rem;
-}
-
-.change-theme, .change-theme-name {
-  color: var(--text-color);
-}
-
-.change-theme {
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.change-theme-name {
-  font-size: var(--small-font-size);
-}
-
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -75,17 +50,27 @@ input {
   overflow-x: hidden;
 }
 
-/*=============== HEADER ===============*/
+/* --------------------------------- HEADER  --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #000;
+  background-color: #1b1b1b;
 }
+/* --------------------------------- FIM HEADER --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
 
-/*=============== NAV ===============*/
+
+
+
+/* --------------------------------- NAV --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
 .nav {
   height: var(--header-height);
   display: flex;
@@ -177,7 +162,7 @@ ul {
 
 /* Alterar cor background header */
 .scroll-header {
-  background-color: #000;
+  background-color: #121212;
 }
 
 .scroll-header .nav__logo,
@@ -248,7 +233,9 @@ html, body {
   background-color: var(--text-color-light);
 }
 
-/*=============== RESPONSIVIDADE ===============*/
+/* --------------------------------- RESPONSIVIDADE  --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
 /* Para dispositivos pequenos */
 @media screen and (max-width: 340px) {
   .home__info {
@@ -285,27 +272,6 @@ html, body {
   }
   .nav__toggle, .nav__close {
     display: none;
-  }
-  .change-theme-name {
-    display: none;
-  }
-  .change-theme {
-    color: var(--white-color);
-  }
-  .active-link::before {
-    background-color: var(--white-color);
-  }
-  .scroll-header .nav__link {
-    color: #fff;
-  }
-  .scroll-header .active-link {
-    color: var(--title-color);
-  }
-  .scroll-header .active-link::before {
-    background-color: var(--title-color);
-  }
-  .scroll-header .change-theme {
-    color: var(--text-color);
   }
 }
 

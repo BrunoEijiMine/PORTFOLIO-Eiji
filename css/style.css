@@ -1,11 +1,18 @@
+:root{
+    --cor-azul: #2750dc;
+    --cor-bg: #121212;
+    --cor-branca: #fff;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-/*=============== VARIAVEIS CSS (GRECAO) ===============*/
+
 body{
-    background-color: #282828 !important;
+    background-color: var(--cor-bg) !important;
+    color: var();
 }
 
 /* --------------------------------- INICIO PAGINA  --------------------------------- */
@@ -37,19 +44,19 @@ body{
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
-    color: #fff;
+    color: var(--cor-branca) !important;
 }
 
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    color: #00abf0;
+    color: var(--cor-azul);
 }
 
 .home-content p{
     font-size: 16px;
     margin: 20px 0 40px;
-    color: #fff;
+    color: var(--cor-branca);
 }
 
 .home-content .btn-box{
@@ -66,7 +73,7 @@ body{
     align-items: center;  
 }
 
-/*  --------------------------------- FIM HOME --------------------------------- */
+/*  --------------------------------- FIM PAGINA --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 
