@@ -21,3 +21,5 @@ function trocarTab2() {
   titulo1.classList.remove("active");
   titulo2.classList.add("active");
 }
+
+console.log(trocarTab1);

@@ -1,78 +1,78 @@
-:root{
-    --cor-azul: #2750dc;
-    --cor-bg: #121212;
-    --cor-branca: #fff;
-    --cor-escritas: #BFD0DB;
+:root {
+  --cor-azul: #2750dc;
+  --cor-bg: #121212;
+  --cor-branca: #fff;
+  --cor-escritas: #BFD0DB;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body{
-    background-color: var(--cor-bg) !important;
-    color: var();
+body {
+  background-color: var(--cor-bg) !important;
+  color: var();
 }
 
 /* --------------------------------- INICIO HOME  --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 
-.home{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
 }
 
-.home-content{
-    max-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+.home-content {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.home-bg{
-    border-radius: 16px;
-    background: url(/img/bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.home-bg {
+  border-radius: 16px;
+  background: url(/img/bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.home-content h1{
-    font-size: 56px;
-    font-weight: 700;
-    color: var(--cor-branca) !important;
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--cor-branca) !important;
 }
 
-.home-content h3{
-    font-size: 32px;
-    font-weight: 700;
-    color: var(--cor-azul);
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--cor-azul);
 }
 
-.home-content p{
-    font-size: 16px;
-    margin: 20px 0 40px;
-    color: var(--cor-branca);
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+  color: var(--cor-branca);
 }
 
-.home-content .btn-box{
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
-    height: 50px;
+.home-content .btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  height: 50px;
 }
 
-.btn-box a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;  
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*  --------------------------------- FIM HOME --------------------------------- */
@@ -84,111 +84,186 @@ body{
 /*  --------------------------------- INICIO EXPERIÊNCIA --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
-.tituloExperiencia{
-  width: 1100px;
+.tituloExperiencia {
+  width: auto;
+  max-width: 1000px;
   margin: 0 auto;
   color: var(--cor-branca);
   margin-bottom: 20px;
 }
 
-.bg2{
+.bg2 {
   /* margin: 20px; */
   background-color: #1b1b1b;
   padding: 100px;
 }
 
 .containerExperiencia {
-    border-radius: 10px;
-    width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 9fr;
-  }
-  
-  .tabs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    /* background-color: var(--cor-bg); */
-  }
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+}
 
-  .divisaoTitulo{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .tabs h3 {
-    color: var(--cor-branca);
-    height: 33.33%;
-    display: grid;
-    place-items: center;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  
-  .tab-content {
-    padding: 1em 1.5em;
-  }
-  
-  .tab-content h4 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: var(--cor-branca);
-    font-weight: 600;
-  }
+.tabs {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 60px;
+  background: var(--cor-bg);
+}
 
-  .tab-content h5{
-    color: var(--cor-azul);
-  }
+.divisaoTitulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .tab-content h6{
-    color: var(--cor-escritas);
-  }
-  
-  .tab-content p {
-    text-align: justify;
-    line-height: 1.9;
-    letter-spacing: 0.4px;
-    color: var(--cor-escritas);
-  }
-  
-  .tab-content > div {
-    display: none;
-  }
-  
-  .tab-content > div.active {
-    display: block;
-  }
-  
-  .tabs .active {
-    background: var(--cor-bg);
-    border-radius: 10px;
-    border-left: 3px solid var(--cor-azul);
-    color: var(--cor-azul);
-    transition: 0.2s;
-  }
-  
-  @media screen and (max-width: 500px) {
-    
-  }
-  
+.tabs h3 {
+  color: var(--cor-branca);
+  height: 100px;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-content {
+  padding: 1em 1.5em;
+}
+
+.tab-content h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-branca);
+  font-weight: 600;
+}
+
+.tab-content h5 {
+  color: var(--cor-azul);
+}
+
+.tab-content h6 {
+  color: var(--cor-escritas);
+}
+
+.tab-content p {
+  text-align: justify;
+  line-height: 1.9;
+  letter-spacing: 0.4px;
+  color: var(--cor-escritas);
+}
+
+.tab-content>div {
+  display: none;
+}
+
+.tab-content>div.active {
+  display: block;
+}
+
+.tabs .active {
+  background: var(--cor-bg);
+  border-left: 3px solid var(--cor-azul);
+  color: var(--cor-azul);
+  width: 100%;
+  max-width: 300px;
+}
+
+@media screen and (max-width: 500px) {}
+
 /*  --------------------------------- FIM EXPERIÊNCIA --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 
-@media only screen and (max-width : 800px){
-    .home{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .containerExperiencia {
-        font-size: 14px;
-        max-width: 500px;
-        height: 70vh;
-      }
-    
-      .tab-content {
-        padding: 1em 1.2em;
-      }
+
+
+
+/*  --------------------------------- INICIO RESPONSIVO --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+
+/* Estilos para dispositivos móveis (celulares) */
+@media only screen and (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .bg2{
+    padding: 70px
+  }
+
+  .containerExperiencia {
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .divisaoTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-content {
+    padding: 2em 0;
+  }
+
+  .tituloExperiencia {
+    width: 100%;
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .bg2{
+    padding: 70px
+  }
+
+  .containerExperiencia {
+    width: auto;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .divisaoTitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-content {
+    padding: 2em 0;
+  }
+
+  .tituloExperiencia {
+    width: 100%;
+  }
+}
+
+/* Estilos para dispositivos com largura de tela entre 800 e 1120 pixels */
+@media only screen and (min-width: 800px) and (max-width: 1025px) {
+  .tabs .active{
+    width: 225px;
+  }
+
+  .divisaoTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+}
+
+/* Estilos para PCs e dispositivos maiores */
+@media only screen and (min-width: 1025px) {
+  /* Adicione aqui os estilos específicos para PCs e dispositivos maiores */
 }
