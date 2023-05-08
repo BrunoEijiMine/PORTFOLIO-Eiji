@@ -95,6 +95,7 @@ ul {
 .nav__toggle {
   font-size: 1.2rem;
   cursor: pointer;
+  margin: 20px;
 }
 
 .nav__menu {
@@ -106,7 +107,7 @@ ul {
   display: block;
   width: 0;
   height: 2px;
-  background: #00abf0;
+  background: #2750dc;
   transition: width .3s;
 }
 
@@ -115,10 +116,10 @@ ul {
   transition: width .3s;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .nav__menu {
     position: fixed;
-    background-color: #00abf0;
+    background-color: #2750dc;
     top: 0;
     right: -100%;
     width: 70%;
