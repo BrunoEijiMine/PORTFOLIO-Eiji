@@ -61,7 +61,7 @@ body {
   font-size: 18px;
   margin: 20px 0 40px;
   color: var(--cor-branca);
-  letter-spacing: 3px
+  line-height: 30px;
 }
 
 .home-content .btn-box {
@@ -118,9 +118,9 @@ body {
 .tabs {
   position: relative;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   margin-right: 60px;
-  background: var(--cor-bg);
+  /* background: var(--cor-bg); */
 }
 
 .divisaoTitulo {
@@ -131,11 +131,8 @@ body {
 
 .tabs h3 {
   color: var(--cor-branca);
-  height: 100px;
   display: grid;
   place-items: center;
-  font-size: 17px;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -152,10 +149,12 @@ body {
 
 .tab-content h5 {
   color: var(--cor-azul);
+  font-size: 20px;
 }
 
 .tab-content h6 {
   color: var(--cor-escritas);
+  font-size: 17px;
 }
 
 .tab-content p {
@@ -171,14 +170,25 @@ body {
 
 .tab-content>div.active {
   display: block;
+  line-height: 40px;
+}
+
+.buttonExperiencia{
+  border: 1px solid var(--cor-azul);
+  color: var(--cor-azul);
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  margin-bottom: 15px;
 }
 
 .tabs .active {
-  background: var(--cor-bg);
-  border-left: 3px solid var(--cor-azul);
+  border: 1px solid var(--cor-azul);
   color: var(--cor-azul);
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
+  height: 50px;
+
 }
 
 /*  --------------------------------- FIM EXPERIÊNCIA --------------------------------- */
@@ -192,14 +202,13 @@ body {
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /* Estilos para dispositivos móveis (celulares-menores) */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 375px) {
   .home{
     margin-top: 50px;
   }
 
   .home-bg {
-    width: 100%;
-    box-shadow: none !important;
+    display: none !important;
   }
 }
 
@@ -234,6 +243,19 @@ body {
     align-items: flex-start;
   }
 
+  .tabs{
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    margin: 0;
+  }
+
+  .buttonExperiencia{
+    margin-right: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
+
   .tab-content {
     padding: 2em 0;
   }
@@ -266,6 +288,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .tabs{
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    margin: 0;
+  }
+
+  .buttonExperiencia{
+    margin-right: 10px;
   }
 
   .tab-content {

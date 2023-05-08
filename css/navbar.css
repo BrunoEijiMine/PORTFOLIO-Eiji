@@ -116,7 +116,7 @@ ul {
   transition: width .3s;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .nav__menu {
     position: fixed;
     background-color: #2750dc;
