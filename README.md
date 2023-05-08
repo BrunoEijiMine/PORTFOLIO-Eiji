@@ -1,4 +1,4 @@
-# Portifolio-Eiji
+# Portfolio-Eiji
 
 - Projeto com intuito de desenvolver um portifólio pessoal.
 
