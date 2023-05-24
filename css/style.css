@@ -37,13 +37,13 @@ body {
 
 .home-bg {
   border-radius: 16px;
-  background: url(/img/bg.png);
+  background: url(https://i.ibb.co/wsZnR04/bg.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0px 0px 112px 90px rgb(19, 19, 19);
-  -moz-box-shadow: inset 0px 0px 112px 90px rgb(19, 19, 19);
-  box-shadow: inset 0px 0px 112px 90px rgb(19, 19, 19);
+  -webkit-box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
+  -moz-box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
+  box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
 }
 
 .home-content h1 {
@@ -146,8 +146,8 @@ body {
   padding: 1em 1.5em;
   --angle: 0deg;
   border: 3px solid;
-  border-image: conic-gradient(from var(--angle), rgb(26, 26, 26),  rgb(26, 26, 26),  rgb(38, 80, 219),
-                                                rgb(26, 26, 26),  rgb(26, 26, 26)) 1;
+  border-image: conic-gradient(from var(--angle), rgb(26, 26, 26), rgb(26, 26, 26), rgb(38, 80, 219),
+      rgb(26, 26, 26), rgb(26, 26, 26)) 1;
   animation: 4s rotate linear infinite;
 }
 
@@ -199,10 +199,11 @@ body {
   height: 50px;
   --angle: 0deg;
   border: 3px solid;
-  border-image: conic-gradient(from var(--angle), rgb(26, 26, 26),  rgb(26, 26, 26),  rgb(38, 80, 219),
-                                                rgb(26, 26, 26),  rgb(26, 26, 26)) 1;
+  border-image: conic-gradient(from var(--angle), rgb(26, 26, 26), rgb(26, 26, 26), rgb(38, 80, 219),
+      rgb(26, 26, 26), rgb(26, 26, 26)) 1;
   animation: 4s rotate linear infinite;
 }
+
 /*  --------------------------------- FIM EXPERIÊNCIA --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
@@ -214,7 +215,7 @@ body {
 
 @keyframes rotate {
   to {
-      --angle: 360deg;
+    --angle: 360deg;
   }
 }
 
@@ -223,7 +224,102 @@ body {
   initial-value: 0deg;
   inherits: false;
 }
+
 /* FIM EFEITO BORDA-------------------------------- */
+
+
+/*  --------------------------------- PROGRESS-BAR --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+.progress_container {
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.progress {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_item {
+  padding: 0.5rem 0;
+}
+
+.progress_title {
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.progress_bar {
+  position: relative;
+  width: 30rem;
+  height: 4px;
+  border-radius: 2rem;
+  background: #1b1b1b;
+}
+
+.bar {
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1a1a1a, #003bfd, #003cff);
+  position: absolute;
+  transition: width 1.5s cubic-bezier(0.1, 0.42, 0.85, 1);
+  width: 0;
+  height: 100%;
+  left: 0;
+}
+
+.bar::after {
+  content: attr(data-text);
+  position: absolute;
+  right: 0;
+  top: -3rem;
+  width: 4rem;
+  height: 2rem;
+  background: #1b1b1b;
+  font-size: 18px;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.1rem;
+  animation: text 0.6s ease-in-out;
+  font-weight: bold;
+}
+
+.bar::before {
+  content: ' ';
+  position: absolute;
+  right: 1rem;
+  top: -1.2rem;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid var(--cor-escritas);
+  animation: text 0.6s ease-in-out;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  --------------------------------- FIM PROGRESS-BAR --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
 
 
 /*  --------------------------------- INICIO RESPONSIVO --------------------------------- */
@@ -233,6 +329,25 @@ body {
 @media only screen and (max-width: 375px) {
   .home {
     margin-top: 50px;
+  }
+
+  .progress_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress_bar {
+    display: flex;
+    justify-content: center;
+    width: 280px;
+  }
+
+  .bar::before{
+    content: none;
+  }
+
+  .bar::after{
+    content: none;
   }
 }
 
@@ -288,6 +403,25 @@ body {
   .tituloExperiencia {
     width: 100%;
   }
+
+  .progress_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress_bar {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+  }
+
+  .bar::before{
+    content: none;
+  }
+
+  .bar::after{
+    content: none;
+  }
 }
 
 /* Estilos para tablets */
@@ -334,6 +468,23 @@ body {
   .tituloExperiencia {
     width: 100%;
   }
+
+  .progress_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .progress_bar {
+    width: 25rem;
+  }
+
+  .bar::before{
+    content: none;
+  }
+
+  .bar::after{
+    content: none;
+  }
 }
 
 /* Estilos para dispositivos com largura de tela entre 800 e 1120 pixels */
@@ -355,7 +506,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
 
+  .progress_container {
+    display: flex;
+    justify-content: center;
   }
 }
 
