@@ -1,10 +1,22 @@
 :root {
   --cor-azul: #2750dc;
   --cor-bg: #121212;
-  --cor-bg-secundaria: #1b1b1b; 
+  --cor-bg-secundaria: #1b1b1b;
   --cor-branca: #fff;
   --cor-escritas: #BFD0DB;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--cor-bg) !important;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-azul) !important;
+  border-radius: 15px;
+}
+
 
 * {
   margin: 0;
@@ -45,12 +57,6 @@ body {
   -webkit-box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
   -moz-box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
   box-shadow: inset 0px 0px 112px 90px rgb(18, 18, 19);
-  filter: grayscale(1);
-  transition: 0.7s;
-}
-
-.home-bg:hover {
-  filter: none;
 }
 
 .home-content h1 {
@@ -337,20 +343,91 @@ body {
 
 .img_cartoon {
   margin-top: 70px;
-  -webkit-box-shadow: 3px 3px 14px 0px rgba(20,20,20,1);
-  -moz-box-shadow: 3px 3px 14px 0px rgba(20,20,20,1);
-  box-shadow: 3px 3px 14px 0px rgba(20,20,20,1);
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(20, 20, 20, 1);
+  -moz-box-shadow: 3px 3px 14px 0px rgba(20, 20, 20, 1);
+  box-shadow: 3px 3px 14px 0px rgba(20, 20, 20, 1);
 }
 
-.img_cartoon img{
+.img_cartoon img {
   border-radius: 8px !important;
 }
 
-.img_cartoon img:hover{
-
-}
+.img_cartoon img:hover {}
 
 /*  --------------------------------- FIM PROGRESS-BAR --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+
+
+
+/*  --------------------------------- FOOTER --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+/*  --------------------------------- --------------------------------- */
+
+.footer {
+  padding: 40px 0;
+  background-color: var(--cor-branca);
+}
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: var(--cor-escritas);
+}
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid var(--cor-escritas);
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+.footer .social a:hover {
+  color: var(--cor-azul);
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+/* .footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.footer ul a:hover {
+  opacity: 1;
+} */
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--cor-escritas);
+}
+
+.beta {
+  color: #3fb950;
+  border: 1px solid #3fb950;
+  border-radius: 9999px;
+  padding: 5px;
+  margin-left: 30px;
+  font-size: 10px;
+}
+
+
+/*  --------------------------------- FIM FOOTER --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 
@@ -367,7 +444,7 @@ body {
   .container_dividir_progress {
     flex-direction: column-reverse;
     margin: 10px;
-}
+  }
 
   .progress_container {
     display: flex;
@@ -380,7 +457,7 @@ body {
     width: 280px;
   }
 
-  .progress{
+  .progress {
     margin-top: -20px;
   }
 
@@ -392,10 +469,11 @@ body {
     content: none;
   }
 
-  .img_cartoon img{
-    width: 200px;
-    height: 200px;
+  .img_cartoon img {
+    width: 250px;
+    height: 250px;
   }
+
 }
 
 /* Estilos para dispositivos móveis (celulares) */
@@ -454,14 +532,14 @@ body {
   .container_dividir_progress {
     flex-direction: column-reverse;
     margin: 10px;
-}
+  }
 
   .progress_container {
     display: flex;
     justify-content: center;
   }
 
-  .progress{
+  .progress {
     margin-top: -20px;
   }
 
@@ -479,9 +557,9 @@ body {
     content: none;
   }
 
-  .img_cartoon img{
-    width: 200px;
-    height: 200px;
+  .img_cartoon img {
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -533,7 +611,7 @@ body {
   .container_dividir_progress {
     flex-direction: column-reverse;
     margin: 10px;
-}
+  }
 
   .progress_container {
     display: flex;
@@ -552,7 +630,7 @@ body {
     content: none;
   }
 
-  .img_cartoon img{
+  .img_cartoon img {
     width: 300px;
     height: 300px;
   }
@@ -581,7 +659,7 @@ body {
 
   .container_dividir_progress {
     flex-direction: column-reverse;
-}
+  }
 
   .progress_container {
     display: flex;

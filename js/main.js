@@ -31,11 +31,9 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*============================ PROGRESS-BAR ==================================*/
 function progressAnimation() {
+    
     // Adiciona um event listener para o evento de scroll
     window.addEventListener('scroll', function () {
-        // Obtém a posição vertical atual da janela
-        var scrollPosition = window.scrollY;
-
         // Obtém a posição vertical da seção desejada
         var section = document.getElementById('scrollProgressBar');
         var sectionPosition = section.getBoundingClientRect().top;
