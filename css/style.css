@@ -437,88 +437,40 @@ body {
 /*  --------------------------------- PROJETOS --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
-.titulo-projeto{
-  width: auto;
-  max-width: 860px;
+
+.projetos{
+  width: 1200px;
   margin: 0 auto;
+}
+
+.heading{
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 37.5px;
   color: var(--cor-branca);
 }
 
-.container-projeto{
-  width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px 70px 50px 70px;
+.container-swiper-wrapper{
+  margin-bottom: 35px;
 }
 
-.card{
-  width: 240px;
-  height: 340px;
-  border-radius: 5px;
-  overflow: hidden;
+.projetos .slide{
+  text-align: center;
+}
+
+.projetos .slide .image{
   position: relative;
+  overflow: hidden;
 }
 
-.card-img{
+.projetos .slide .image img{
+  background-color: #f1eae9;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
+  height: auto;
 }
 
-.card-body{
-  width: 100%;
-  height: 100%;
-  top: -175%;
-  right: 0;
-  position: absolute;
-  background: #1111119d;
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: 1.5s;
-}
 
-.card:hover .card-body{
-  top: 0;
-}
-
-.card-title{
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.card-sub-title{
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 300;
-}
-
-.card-info{
-  font-size: 12px;
-  line-height: 19px;
-  /* margin: 15px 0px; */
-  font-weight: 300;
-}
-
-.card-btn{
-  color: #2750dc;
-  background: red;
-  padding: 5px 0;
-  width: 80px;
-  margin-top: 15px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
-  font-weight: 500;
-  cursor: pointer;
-}
 /*  --------------------------------- FIM PROJETOS --------------------------------- */
 /*  --------------------------------- --------------------------------- */
 /*  --------------------------------- --------------------------------- */
@@ -667,6 +619,11 @@ body {
     margin-top: 80px;
   }
 
+  .projetos{
+    width: 385px;
+    margin: 0 auto;
+  }
+
 
 }
 
@@ -776,6 +733,14 @@ body {
     margin-top: 130px;
   }
 
+  .heading{
+    width: auto;
+  }
+
+  .projetos{
+    width: 320px;
+  }
+
 }
 
 /* Estilos para tablets */
@@ -868,6 +833,15 @@ body {
   .icone-image-memoji-sobre {
     margin-bottom: 40px;
   }
+
+  .heading{
+    width: auto;
+  }
+
+  .projetos{
+    width: 500px;
+  }
+
 }
 
 /* Estilos para dispositivos com largura de tela entre 800 e 1120 pixels */
@@ -925,9 +899,25 @@ body {
     margin-bottom: 40px;
     margin-top: 130px;
   }
+
+  .heading{
+    width: auto;
+  }
+
+  .projetos{
+    width: 700px;
+  }
+
 }
 
 /* Estilos para PCs e dispositivos maiores */
 @media only screen and (min-width: 1025px) {
   /* Adicione aqui os estilos específicos para PCs e dispositivos maiores */
+  .heading{
+    width: auto;
+  }
+
+  .projetos{
+    width: 900px;
+  }
 }

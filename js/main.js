@@ -78,3 +78,37 @@ function progressAnimation() {
 
 // Chame a função progressAnimation quando desejar executar o código
 progressAnimation();
+
+var swiper = new Swiper(".team-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween:20,
+    centeredSlides: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        clickable: true,
+      },
+
+      
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        700: {
+            slidesPerView: 1,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+
