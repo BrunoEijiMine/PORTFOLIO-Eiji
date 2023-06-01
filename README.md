@@ -1,6 +1,6 @@
-<h1 align="center">
+<h3 align="center">
   💻<br>Projeto com intuíto de desenvolver um portfólio pessoarl - Bruno Eiji
-</h1>
+</h3>
 
 ![image](https://github.com/BrunoEijiMine/PORTFOLIO-Eiji/assets/62913130/0e25c72f-5ccf-4f25-ba4b-6b4f3ec175bf)
 
